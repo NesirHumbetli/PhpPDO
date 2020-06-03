@@ -1,0 +1,36 @@
+RewriteEngine on
+
+# ErrorDocument 404 http://localhost/CV-PDO/404
+RewriteRule ^404$ 404.php [NC,L]
+RewriteRule ^anaseyfe$ index.php [NC,L]
+RewriteRule ^haqqimizda$ haqqimizda.php [NC,L]
+RewriteRule ^xeberler$ xeberler.php [NC,L]
+RewriteRule ^bizimle-elaqe$ elaqe.php [NC,L]
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+RewriteRule ^axtar$ axtar.php [NC,L]
+
+RewriteRule ^emlak-([0-9a-zA-Z-_]+)-([0-9]+)$ emlak-detay.php?sef=$1&emlak_id=$2 [L,QSA]
+
+RewriteRule ^xeberler-([0-9a-zA-Z-_]+)-([0-9]+)$ xeber-elave.php?sef=$1&mezmun_id=$2 [L,QSA] 
+
+RewriteRule ^sayfa-([0-9a-zA-Z-_]+)-([0-9]+)$ menu-detay.php?sef=$1&menu_id=$2 [L,QSA] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
